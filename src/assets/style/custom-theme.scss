@@ -1,0 +1,121 @@
+.ant-btn {
+  border-radius: 8px;
+  font-weight: bold;
+  height: 48px;
+  line-height: 1.25;
+  font-size: 16px;
+
+  & > span {
+    font-weight: inherit;
+    background-color: $primary-color;
+    color: white;
+  }
+
+  &-sm {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+
+  &,
+  &:hover,
+  &:focus {
+    border-color: $primary-color;
+    color: $primary-color;
+  }
+
+  &-primary,
+  &-primary:hover,
+  &-primary:focus {
+    color: #fff;
+    border-color: $primary-color;
+    background: $primary-color;
+  }
+
+  &-transparent,
+  &-transparent:hover,
+  &-transparent:focus {
+    background: #fff;
+    border-color: #fff;
+    color: #000;
+  }
+}
+
+.ant-form-item {
+  &.ant-form-item-with-help {
+    margin: 0 0 10px;
+  }
+
+  &:not(.ant-form-item-with-help) {
+    margin: 0 0 24px;
+  }
+
+  &-explain.ant-form-item-explain-connected {
+    .ant-form-item-explain-error {
+      padding-top: 6px;
+      font-size: 14px;
+      line-height: 1;
+    }
+  }
+
+  &-required:before {
+    position: relative;
+    top: -10px;
+  }
+
+  .ant-input {
+    padding: 12px;
+    font-size: 16px;
+    height: 48px;
+    border-radius: 8px;
+
+    &:hover,
+    &:focus {
+      border-color: $primary-color;
+      box-shadow: none !important;
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 240px;
+
+  &-slide {
+    text-align: center;
+    font-size: 18px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px !important;
+  }
+
+  &-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &-pagination.swiper-pagination-horizontal {
+    display: flex;
+    gap: 4px;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100px;
+    padding: 4px;
+    bottom: 12px;
+
+    > .swiper-pagination-bullet {
+      width: 6px;
+      height: 6px;
+      margin: 0;
+
+      &.swiper-pagination-bullet-active {
+        background: $primary-color !important;
+        transform: scale(1.5);
+      }
+    }
+  }
+}

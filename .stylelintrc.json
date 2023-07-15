@@ -1,0 +1,7 @@
+{
+  "extends": "stylelint-config-standard",
+  "customSyntax": "postcss-html",
+  "rules": {
+    "selector-pseudo-class-no-unknown": null
+  }
+}
